@@ -1,0 +1,50 @@
+{
+    "name": "digital-awesome/laravel-onfleet",
+    "description": "A simple Laravel wrapper for Onfleet php sdk",
+    "type": "library",
+    "require": {
+        "php": ">=8.2",
+        "laravel/framework": "~10.0",
+        "onfleet/php-onfleet": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "DigitalAwesome\\LaravelOnfleet\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DigitalAwesome\\LaravelOnfleet\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DigitalAwesome\\LaravelOnfleet\\OnfleetServiceProvider"
+            ],
+            "aliases": {
+                "Onfleet": "DigitalAwesome\\LaravelOnfleet\\OnfleetFacade"
+            }
+        }
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Digital Awesome",
+            "email": "hello@digitalawesomeapps.com"
+        },
+        {
+            "name": "Davit Vardanyan",
+            "email": "hello@davit.me"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "2.x-dev"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
