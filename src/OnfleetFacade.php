@@ -10,4 +10,9 @@ class OnfleetFacade extends Facade
     {
         return 'Onfleet';
     }
+
+    public static function verifyKey(): bool
+    {
+        return static::__callStatic('verifyKey', func_get_args());
+    }
 }

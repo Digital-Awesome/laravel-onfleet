@@ -20,7 +20,7 @@ class OnfleetServiceProvider extends ServiceProvider
         });
 
         $this->app->alias(Onfleet::class, 'Onfleet');
-        // Default Package Configuration
+
         $this->mergeConfigFrom(__DIR__ . '/config/onfleet.php', 'onfleet');
     }
 }
