@@ -11,7 +11,7 @@ A simple Laravel wrapper for <a href="https://github.com/onfleet/php-onfleet">On
 
 ## Composer
 ```
-composer require "digital-awesome/laravel-onfleet"
+composer require digital-awesome/laravel-onfleet
 ```
 
 ## Service Provider
