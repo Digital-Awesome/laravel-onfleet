@@ -4,6 +4,9 @@ namespace DigitalAwesome\LaravelOnfleet;
 
 use Illuminate\Support\Facades\Facade;
 
+/**
+ * @method Workers workers()
+ */
 class OnfleetFacade extends Facade
 {
     protected static function getFacadeAccessor(): string
