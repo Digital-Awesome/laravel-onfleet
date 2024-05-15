@@ -5,7 +5,8 @@ namespace DigitalAwesome\LaravelOnfleet;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @property-read Workers $workers
+ * @method static Workers workers()
+ * @method static Admins admins()
  */
 class OnfleetFacade extends Facade
 {

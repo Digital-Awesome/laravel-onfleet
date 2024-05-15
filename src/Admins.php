@@ -3,7 +3,7 @@
 namespace DigitalAwesome\LaravelOnfleet;
 
 
-abstract class Workers
+abstract class Admins
 {
     abstract public function get(): array;
     abstract public function list(): array;
