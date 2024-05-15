@@ -1,5 +1,5 @@
 # Laravel-Onfleet
-A simple Laravel wrapper for Onfleet PHP Wrapper.
+A simple Laravel wrapper for <a href="https://github.com/onfleet/php-onfleet">Onfleet PHP Wrapper</a>.
 
 # Installation
 
@@ -11,7 +11,7 @@ A simple Laravel wrapper for Onfleet PHP Wrapper.
 
 ## Composer
 ```
-composer require "Digital-Awesome/laravel-onfleet"
+composer require "digital-awesome/laravel-onfleet"
 ```
 
 ## Service Provider
@@ -56,7 +56,13 @@ return [
 
 # Getting Started
 
-I highly advise to use the facade as all examples will use it.
+Basic usage examples
 ```
 use Onfleet;
+
+Onfleet::verifyKey();
+$workers = Onfleet::workers()->get();
+$tasks = Onfleet::tasks()->get([ "from" => "<from_time>", "to" => "<to_time>" ]);
 ```
+
+Please check the official <a href="https://github.com/onfleet/php-onfleet">Onfleet PHP Wrapper</a> documentation for more usage examples and complete documentation.
