@@ -6,7 +6,7 @@ A simple Laravel wrapper for <a href="https://github.com/onfleet/php-onfleet">On
 ## Requirements
  *  php: >=8.2
  *  guzzlehttp/guzzle: ^7.8
- *  laravel/framework: ~10.0
+ *  laravel/framework: ~10.0|~11.0|~12.0
  *  onfleet/php-onfleet: dev-master
 
 ## Composer
